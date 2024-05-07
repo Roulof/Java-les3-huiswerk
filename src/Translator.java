@@ -1,5 +1,6 @@
 // Importeren van HashMap utility
 import java.util.HashMap;
+import java.util.Map;
 
 // Public class voor de Translator
 public class Translator {

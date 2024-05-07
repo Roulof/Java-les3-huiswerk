@@ -1,4 +1,3 @@
-import com.sun.java.accessibility.util.Translator;
 
 import java.util.Scanner;
 
@@ -23,10 +22,20 @@ public class Main {
             if (input.equals("x")) {
                 play = false;
             }
+
             else if (input.equals("v")) {
                 System.out.println("Type een cijfer in van 0 t/m 9");
                 int number = scanner.nextInt();
                 scanner.nextLine();
+
+                if (number >= 0 && number <= 10) {
+                    String result = translator.translate(number);
+                    System.out.println("De vertaling van " + number + " : " + result);
+                }
+
+                else { System.out.println(ongeldig);}
+
+
             }
         }
 
