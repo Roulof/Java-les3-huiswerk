@@ -14,8 +14,11 @@ public class Translator {
         for (int i = 0; i < numeric.length; i++) {
             numericAlpha.put(numeric[i], alphabetic[i]);
         }
-
     }
 
+    //Translate methode die een string terugstuurd
+    public String translate(Integer number) {
+        return numericAlpha.get(number);
+    }
 
 }
